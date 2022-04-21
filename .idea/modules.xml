@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FlinkCDC/FlinkCDC.iml" filepath="$PROJECT_DIR$/FlinkCDC/FlinkCDC.iml" />
       <module fileurl="file://$PROJECT_DIR$/ImportantKnowlages/ImportantKnowlages.iml" filepath="$PROJECT_DIR$/ImportantKnowlages/ImportantKnowlages.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/KnowledgeAccumulation2.iml" filepath="$PROJECT_DIR$/.idea/KnowledgeAccumulation2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/KnowledgeAccumulation.iml" filepath="$PROJECT_DIR$/.idea/KnowledgeAccumulation.iml" />
     </modules>
   </component>
 </project>

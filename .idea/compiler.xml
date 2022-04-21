@@ -7,15 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="KnowledgeAccumulation2" />
+        <module name="KnowledgeAccumulation" />
         <module name="FlinkCDC" />
         <module name="ImportantKnowlages" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="FlinkCDC" target="8" />
-      <module name="ImportantKnowlages" target="8" />
-      <module name="KnowledgeAccumulation2" target="1.5" />
+      <module name="ImportantKnowlages" target="1.8" />
+      <module name="KnowledgeAccumulation" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
