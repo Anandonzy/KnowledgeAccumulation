@@ -32,7 +32,7 @@ public class Kafka01_Test_Producer {
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
-        props.put("interceptor.classes", "com.atguigu.itdachang.kafka.MyProducerInterceptor");
+        props.put("interceptor.classes", "com.study.knowlages.kafka.MyProducerInterceptor");
         props.put("enable.idempotence", "true");
         // 构建生产者对象
         KafkaProducer<String, String> producer = new KafkaProducer<>(props);
@@ -40,7 +40,7 @@ public class Kafka01_Test_Producer {
         for (int i = 0; i < 2; i++) {
             // ProducerRecord生产模型
             // send方法用于发送数据
-            producer.send(new ProducerRecord<String, String>("itdachang", Integer.toString(i), Integer.toString(i)));
+            producer.send(new ProducerRecord<String, String>("test", Integer.toString(i), Integer.toString(i)));
         }
         // 关闭生产者对象
         producer.close();

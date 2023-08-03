@@ -7,15 +7,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="KnowledgeAccumulation" />
-        <module name="FlinkCDC" />
+        <module name="gmall-realtime" />
         <module name="ImportantKnowlages" />
+        <module name="gmall-publisher-2022" />
+        <module name="gmall-realtime-doris" />
+        <module name="gmallpublisher1" />
+        <module name="Spark-Hudi" />
+        <module name="DesignPatterns" />
+        <module name="Algorithm" />
+        <module name="FlinkCDC" />
+        <module name="redis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="FlinkCDC" target="8" />
-      <module name="ImportantKnowlages" target="1.8" />
+      <module name="gamll-gmallpublisher" target="8" />
+      <module name="gmall-doris" target="8" />
       <module name="KnowledgeAccumulation" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gmall-publisher-2022" options="-parameters" />
+      <module name="gmallpublisher1" options="-parameters" />
+      <module name="redis" options="-parameters" />
+    </option>
   </component>
 </project>

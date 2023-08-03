@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/FlinkCDC/pom.xml" />
         <option value="$PROJECT_DIR$/ImportantKnowlages/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot_redis01/pom.xml" />
+        <option value="$PROJECT_DIR$/Spark-Hudi/pom.xml" />
+        <option value="$PROJECT_DIR$/Algorithm/pom.xml" />
+        <option value="$PROJECT_DIR$/FlinkDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/Flink-RealTime-Gmall/pom.xml" />
+        <option value="$PROJECT_DIR$/Flink-RealTime-Gmall/gmallpublisher1/pom.xml" />
+        <option value="$PROJECT_DIR$/Flink-RealTime-Gmall/gmall-publisher-2022/pom.xml" />
+        <option value="$PROJECT_DIR$/DesignPatterns/pom.xml" />
       </list>
     </option>
   </component>

@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FlinkCDC/FlinkCDC.iml" filepath="$PROJECT_DIR$/FlinkCDC/FlinkCDC.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ImportantKnowlages/ImportantKnowlages.iml" filepath="$PROJECT_DIR$/ImportantKnowlages/ImportantKnowlages.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/KnowledgeAccumulation.iml" filepath="$PROJECT_DIR$/.idea/KnowledgeAccumulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesignPatterns/DesignPatterns.iml" filepath="$PROJECT_DIR$/DesignPatterns/DesignPatterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Flink-RealTime-Gmall/gmall-publisher-2022/gmall-publisher-2022.iml" filepath="$PROJECT_DIR$/Flink-RealTime-Gmall/gmall-publisher-2022/gmall-publisher-2022.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Flink-RealTime-Gmall/gmallpublisher1/gmallpublisher1.iml" filepath="$PROJECT_DIR$/Flink-RealTime-Gmall/gmallpublisher1/gmallpublisher1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot_redis01/redis.iml" filepath="$PROJECT_DIR$/SpringBoot_redis01/redis.iml" />
     </modules>
   </component>
 </project>

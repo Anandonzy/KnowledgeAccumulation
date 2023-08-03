@@ -27,9 +27,9 @@ public class MyThreadPoolDemo {
          * newFixedThreadPool
          */
 
-//        ExecutorService threadPool = Executors.newFixedThreadPool(1);  //5个固定的线程
-//        ExecutorService threadPool = Executors.newSingleThreadExecutor();//一个池一个线程
-        ExecutorService threadPool = Executors.newCachedThreadPool();
+        ExecutorService threadPool = Executors.newFixedThreadPool(1);  //5个固定的线程
+        //ExecutorService threadPool = Executors.newSingleThreadExecutor();//一个池一个线程
+        //ExecutorService threadPool = Executors.newCachedThreadPool();
 
         //模拟10个人 来办理业务,每个用户就是一个来自外部的请求.
         try {

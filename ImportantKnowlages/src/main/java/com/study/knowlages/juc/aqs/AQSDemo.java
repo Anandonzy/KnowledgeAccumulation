@@ -1,5 +1,6 @@
 package com.study.knowlages.juc.aqs;
 
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -59,5 +60,8 @@ public class AQSDemo {
                 lock.unlock();
             }
         }, "Thread C").start();
+
+        HashMap<Object, Object> map = new HashMap<>();
+
     }
 }
