@@ -12,7 +12,7 @@ import java.util.Random;
  * @Version 1.0
  */
 public class ClickSource implements SourceFunction<ClickSource.Click> {
-    private Boolean flag = true;
+    private final Boolean flag = true;
 
 
     @Override

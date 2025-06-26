@@ -123,9 +123,9 @@ public class DwsTradePaymentSucWindow {
 
             @Override
             public void open(Configuration parameters) throws Exception {
-                ValueStateDescriptor valueStateDescriptor = new ValueStateDescriptor();
+                ValueStateDescriptor valueStateDescriptor = new ValueStateDescriptor("last-dt", String.class);
                 valueStateDescriptor.getTtlConfig();
-                valueState = getRuntimeContext().getState(new ValueStateDescriptor<JSONObject>("last-state", JSONObject.class));
+                valueState = getRuntimeContext().getState(valueStateDescriptor);
             }
 
             @Override

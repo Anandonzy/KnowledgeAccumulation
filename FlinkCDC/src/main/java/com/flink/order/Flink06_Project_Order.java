@@ -54,8 +54,8 @@ public class Flink06_Project_Order {
                 .keyBy("txId", "txId")
                 .process(new CoProcessFunction<OrderEvent, TxEvent, String>() {
 
-                    Map<String, OrderEvent> orderMap = new HashMap<>();
-                    Map<String, TxEvent> txMap = new HashMap<>();
+                    final Map<String, OrderEvent> orderMap = new HashMap<>();
+                    final Map<String, TxEvent> txMap = new HashMap<>();
 
                     @Override
                     public void processElement1(OrderEvent value, Context context, Collector<String> collector) throws Exception {

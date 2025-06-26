@@ -89,10 +89,7 @@ public class State_Value_State_Window_First {
                             flagState.update(true);
                         } else {
                             out.collect("迟到数据到达，更新窗口计算结果。" +
-                                    "key: " + key + ", 在窗口" +
-                                    "" + ctx.window().getStart() + "~" +
-                                    "" + ctx.window().getEnd() + "里面有 " +
-                                    "" + elements.spliterator().getExactSizeIfKnown() + " 条数据。");
+                                    "key: " + key + ", 在窗口" + ctx.window().getStart() + "~" + ctx.window().getEnd() + "里面有 " + elements.spliterator().getExactSizeIfKnown() + " 条数据。");
                         }
                     }
                 });

@@ -4,10 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Algorithm/Algorithm.iml" filepath="$PROJECT_DIR$/Algorithm/Algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/DesignPatterns/DesignPatterns.iml" filepath="$PROJECT_DIR$/DesignPatterns/DesignPatterns.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Flink-RealTime-Gmall/gmall-flink-211126.iml" filepath="$PROJECT_DIR$/Flink-RealTime-Gmall/gmall-flink-211126.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Flink-RealTime-Gmall/gmall-publisher-2022/gmall-publisher-2022.iml" filepath="$PROJECT_DIR$/Flink-RealTime-Gmall/gmall-publisher-2022/gmall-publisher-2022.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Flink-RealTime-Gmall/gmallpublisher1/gmallpublisher1.iml" filepath="$PROJECT_DIR$/Flink-RealTime-Gmall/gmallpublisher1/gmallpublisher1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringBoot_redis01/redis.iml" filepath="$PROJECT_DIR$/SpringBoot_redis01/redis.iml" />
     </modules>
   </component>
 </project>

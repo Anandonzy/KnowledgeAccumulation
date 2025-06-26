@@ -41,7 +41,7 @@ public class UserViewCountByMyWindowDemo {
 
     private static class MyTumblingWindow extends KeyedProcessFunction<String, ClickSource.Click, UserViewCountPreWindow> {
 
-        private long windowSize; //接收窗口大小
+        private final long windowSize; //接收窗口大小
 
         //key: Tuple2<窗口开始时间, 窗口结束时间>
         //value 窗口内的所有元素

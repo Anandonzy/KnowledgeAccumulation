@@ -16,7 +16,7 @@ import java.util.Random;
 public class SensorSource implements SourceFunction<Sensor> {
 
 
-    private Random random = new Random();
+    private final Random random = new Random();
     private Boolean isRunning = true;
 
     @Override

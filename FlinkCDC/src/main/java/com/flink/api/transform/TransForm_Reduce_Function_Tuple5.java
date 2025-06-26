@@ -22,7 +22,7 @@ public class TransForm_Reduce_Function_Tuple5 {
 
         env.addSource(new SourceFunction<Integer>() {
                     private boolean flag = true;
-                    private Random random = new Random();
+                    private final Random random = new Random();
 
                     @Override
                     public void run(SourceContext<Integer> sourceContext) throws Exception {

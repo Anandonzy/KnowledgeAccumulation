@@ -94,7 +94,7 @@ public class UserBehaviorUvOptimizeDemo {
 
     private static class TopN extends KeyedProcessFunction<Long, ProductUvWindow, String> {
 
-        private int topN;
+        private final int topN;
 
         public TopN(int topN) {
             this.topN = topN;

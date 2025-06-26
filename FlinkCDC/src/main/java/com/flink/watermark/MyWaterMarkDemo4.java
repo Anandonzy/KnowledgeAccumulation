@@ -57,7 +57,7 @@ public class MyWaterMarkDemo4 {
                         return new WatermarkGenerator<Tuple2<String, Long>>() {
 
 
-                            private long delay = 5000L;
+                            private final long delay = 5000L;
                             private long maxTs = -Long.MIN_VALUE + delay + 1L; //用来保存观察到的最大时间戳. 为了防止溢出需要加上+delay + 1ms
 
                             @Override

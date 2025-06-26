@@ -25,6 +25,12 @@ import org.apache.flink.util.Collector;
  * @Version 1.0
  * 将维度表数据写入Hbase 的 phoenix
  * 本地没有hbase的环境 暂时写到mysql里面 gmall_hbase_dim 库里面
+ * 1. 读取kafka中ods层的数据
+ * 2. 读取mysql中的配置表数据
+ * 3. 将配置表数据广播出去
+ * 4. 将ods层的数据和广播出去的配置表数据连接
+ * 5. 通过连接后的数据进行维度关联
+ * 6. 将关联后的数据写入mysql
  */
 
 //数据流：web/app -> nginx -> 业务服务器 -> Mysql(binlog) -> Maxwell -> Kafka(ODS) -> FlinkApp -> Phoenix
@@ -46,6 +52,7 @@ public class DimApp {
         //System.setProperty("HADOOP_USER_NAME", "ziyu");
 
         //TODO 2. 读取Kafka topic_db 主题数据创建主流
+        // 读取Kafka ods_base_db 主题数据创建主流
         String topic = "topic_db";
         String groupId = "test_dim_app";
         DataStreamSource<String> kafkaDs = env.addSource(MyKafkaUtil.getFlinkKafkaConsumer(topic, groupId));

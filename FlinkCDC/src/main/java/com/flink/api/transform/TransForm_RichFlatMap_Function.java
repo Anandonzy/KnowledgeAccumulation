@@ -30,7 +30,7 @@ public class TransForm_RichFlatMap_Function {
 
                     @Override
                     public void flatMap(Integer in, Collector<String> out) throws Exception {
-                        out.collect("flatMap的并行子任务的索引是:" + getRuntimeContext().getIndexOfThisSubtask() + "" +
+                        out.collect("flatMap的并行子任务的索引是:" + getRuntimeContext().getIndexOfThisSubtask() +
                                 "处理的数据是:" + in);
 
                     }

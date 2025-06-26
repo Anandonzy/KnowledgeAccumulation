@@ -32,8 +32,8 @@ public class Flink04_Source_Custom {
     }
 
     public static class MySource implements SourceFunction<WaterSensor> {
-        private String host;
-        private int port;
+        private final String host;
+        private final int port;
         private volatile boolean isRunning = true;
         private Socket socket;
 

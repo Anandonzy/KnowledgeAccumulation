@@ -48,7 +48,7 @@ public class UvDemo {
                     }
                 })
                 .process(new ProcessFunction<Tuple2<String, Long>, Integer>() {
-                    private Set<Long> set = new HashSet();
+                    private final Set<Long> set = new HashSet();
 
                     @Override
                     public void processElement(Tuple2<String, Long> in, Context ctx, Collector<Integer> out) throws Exception {

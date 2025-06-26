@@ -168,7 +168,7 @@ public class Sink_Kafka_Consumer_Demo {
 
     private static class TopN extends KeyedProcessFunction<Long, ProductUvWindow, String> {
 
-        private int topN;
+        private final int topN;
 
         public TopN(int topN) {
             this.topN = topN;

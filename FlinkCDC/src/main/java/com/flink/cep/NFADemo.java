@@ -55,7 +55,7 @@ public class NFADemo {
 
     private static class StateMachine extends KeyedProcessFunction<String, Event, String> {
 
-        private HashMap<Tuple2<String, String>, String> stateMachine = new HashMap<>();
+        private final HashMap<Tuple2<String, String>, String> stateMachine = new HashMap<>();
         private ValueState<String> currentState;
 
         @Override

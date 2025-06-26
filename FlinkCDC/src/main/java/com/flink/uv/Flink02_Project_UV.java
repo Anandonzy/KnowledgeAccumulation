@@ -40,7 +40,7 @@ public class Flink02_Project_UV {
                 }).returns(Types.TUPLE(Types.STRING, Types.LONG))
                 .keyBy(t -> t.f0)
                 .process(new KeyedProcessFunction<String, Tuple2<String, Long>, Integer>() {
-                    HashSet<Long> userIdSet = new HashSet<>();
+                    final HashSet<Long> userIdSet = new HashSet<>();
 
                     @Override
                     public void processElement(Tuple2<String, Long> value, Context context, Collector<Integer> collector) throws Exception {

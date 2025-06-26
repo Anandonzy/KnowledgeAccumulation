@@ -63,8 +63,8 @@ public class TransForm_Key_Process_Function {
                         ctx.timerService().registerProcessingTimeTimer(thirtySecond);
                         ctx.timerService().registerProcessingTimeTimer(sixtySecond);
 
-                        out.collect("key 为" + ctx.getCurrentKey() + ",数据: " + in + " 到达的时间是: " + new Timestamp(currTs) + "" +
-                                "注册第一个定时器的时间是: " + new Timestamp(thirtySecond) + "" +
+                        out.collect("key 为" + ctx.getCurrentKey() + ",数据: " + in + " 到达的时间是: " + new Timestamp(currTs) +
+                                "注册第一个定时器的时间是: " + new Timestamp(thirtySecond) +
                                 "注册第二个定时器的时间是: " + new Timestamp(sixtySecond));
                     }
 

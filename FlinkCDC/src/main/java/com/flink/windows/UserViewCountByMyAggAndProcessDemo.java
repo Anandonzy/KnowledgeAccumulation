@@ -39,7 +39,7 @@ public class UserViewCountByMyAggAndProcessDemo {
     }
 
     private static class MyAggAndProcessResult extends KeyedProcessFunction<String, ClickSource.Click, UserViewCountPreWindow> {
-        private long windwoSize;
+        private final long windwoSize;
         private MapState<Tuple2<Long, Long>, Long> mapState;
 
         public MyAggAndProcessResult(long windwoSize) {

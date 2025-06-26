@@ -35,7 +35,7 @@ public class Flink02_State_Keyed_Value_Acc {
     private static class IntSource implements SourceFunction<Integer> {
 
         private Boolean running = true;
-        private Random random = new Random();
+        private final Random random = new Random();
 
         @Override
         public void run(SourceContext<Integer> ctx) throws Exception {

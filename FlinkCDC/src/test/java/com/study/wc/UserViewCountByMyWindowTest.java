@@ -43,7 +43,7 @@ public class UserViewCountByMyWindowTest {
 
     private static class ClickResult extends KeyedProcessFunction<String, ClickSource.Click, UserViewCountPreWindow> {
 
-        private long windowSize;
+        private final long windowSize;
 
         public ClickResult(long windowSize) {
             this.windowSize = windowSize;

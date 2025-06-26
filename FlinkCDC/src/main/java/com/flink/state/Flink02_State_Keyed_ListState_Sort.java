@@ -37,7 +37,7 @@ public class Flink02_State_Keyed_ListState_Sort {
     private static class IntStatistic implements SourceFunction<Integer> {
 
         private Boolean isRunning = true;
-        private Random random = new Random();
+        private final Random random = new Random();
 
         @Override
         public void run(SourceContext sourceContext) throws Exception {

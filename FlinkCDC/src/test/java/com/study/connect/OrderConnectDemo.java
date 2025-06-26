@@ -55,8 +55,8 @@ public class OrderConnectDemo {
 
                 //4)	因为不同的数据流到达的先后顺序不一致，所以需要匹配对账信息
                 .process(new CoProcessFunction<OrderEvent, TxEvent, String>() {
-                    private Map<String, OrderEvent> orderMap = new HashMap();
-                    private Map<String, TxEvent> txMap = new HashMap();
+                    private final Map<String, OrderEvent> orderMap = new HashMap();
+                    private final Map<String, TxEvent> txMap = new HashMap();
 
                     @Override
                     public void processElement1(OrderEvent value, Context ctx, Collector<String> out) throws Exception {

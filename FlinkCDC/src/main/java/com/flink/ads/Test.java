@@ -34,7 +34,7 @@ public class Test {
 
         }).addSink(new SinkFunction<Tuple2<String, String>>() {
             // shardKey, ck连接
-            private Map<String, Connection> connectionMap = new HashMap<>();
+            private final Map<String, Connection> connectionMap = new HashMap<>();
 
             public void invoke(Tuple2<String, String> value, Context context) throws Exception {
                 Connection connection = connectionMap.get(value.f0);
